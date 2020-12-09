@@ -1,0 +1,50 @@
+.navContainer {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    background-color: #fff;
+}
+  
+.navigationHeader {
+    background-color: #fff;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+  }
+  
+.logoPlace {
+    width: 50%;
+    display: inline-block;
+}
+
+ 
+
+.navigationList {
+    list-style-type: none;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline-start: 0px;
+  }
+  
+.navigationPage {
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgb(63, 66, 68);
+    line-height: 1.8;
+    display: inline-block;
+    
+    
+}
+
+.navigationPage:hover {
+    color: rgb(0, 225, 255);
+}
+  
+  
+  
