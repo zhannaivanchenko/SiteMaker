@@ -1,6 +1,6 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import './NavBar.css';
+import './NavBar.scss';
 import Logo from './Logo.png';
 
 export class NavBar extends React.Component {

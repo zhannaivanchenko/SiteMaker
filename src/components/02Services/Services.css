@@ -1,0 +1,82 @@
+.containerWhite100 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;  
+    flex-direction: column;
+} 
+
+
+.containerWhite70 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin-top: 10px;
+    height: 250px;
+    flex-direction: row;
+    text-align: center;
+}
+.borderLine {
+    width: 50%;
+    /* background-color: yellow; */
+    border-bottom: 2px solid rgb(0, 225, 255);
+}
+
+  
+  
+
+.serviceItem {
+    height: 30px;
+}
+  
+.serviceDescription {
+    display: flex;
+    width: 40%;
+    padding-left: 30px ;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+     
+}
+
+.serviceDecsriptionText {
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgb(146, 155, 160);
+}
+/* .Lorem_ipsum_dolor_sit_amet__consectetur_adipisc {
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgb(146, 155, 160);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 550.828px;
+    top: 1178.675px;
+    z-index: 425;
+  } */
+  
+
+.serviceTitle {
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgb(63, 66, 68);
+   
+  }
+
+  /* .Icon {
+    background-color: rgb(0, 225, 255);
+    position: absolute;
+    left: 481px;
+    top: 936px;
+    width: 56px;
+    height: 47px;
+    z-index: 427;
+  } */
+  
+
+
+  
+  
