@@ -1,0 +1,59 @@
+@import '../../App.scss';
+
+
+.serviceIcon {
+    height: auto;
+}
+
+.serviceTitle {
+    margin-top: 1rem;
+    font-size: 0.6rem;
+    color: rgb(63, 66, 68);
+   
+  }
+
+.defaultBox {
+   border-width: medium;
+   border-bottom-style: solid;
+   border-top-style: solid;
+   border-color: $primary;
+}
+
+.activeBox {
+    border-bottom-style: none;
+    border-right-style: solid;
+    border-width: 1px;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-color: $primary;
+}
+
+
+.serviceBox {
+    height: 2rem;
+    
+    
+}
+
+#services>.col-1{
+    border-color: rgb(0, 225, 255);
+    border-top-color: rgb(0, 225, 255);
+    border-bottom-color:rgb(0, 225, 255);
+}
+
+
+.serviceDescriptionText {
+    font-size: 0.6rem;
+    // font-family: "Raleway";
+    color: rgb(146, 155, 160);
+}
+
+
+
+
+
+  
+
+
+  
+  

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+
+$blue-light: rgb(0, 225, 255);
+$gray-light: rgb(146, 155, 160);
+$gray-dark: rgb(63, 66, 68);
+$primary: $gray-dark;
+$secondary: $gray-light;
+$body-color: $gray-light;
+$mainFont: "Raleway", sans-serif;
+
+$link-hover-color: $blue-light;
+$border-color: $blue-light;
+
+$font-family-base: $mainFont;
+$font-family-sans-serif: $mainFont;
+
+$headings-font-family: $mainFont;
+$input-btn-font-family: $mainFont;
+
+$secondary-background-color: rgba(255, 255, 255, 0.3);
+
+
+
+
+
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "datatables.min";

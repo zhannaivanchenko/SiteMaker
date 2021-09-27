@@ -1,0 +1,66 @@
+@import '../../App.scss';
+
+button {
+  color: rgb(63, 66, 68);
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.containerFullyResponsive {
+  background-color: rgb(247, 247, 247);
+  // height: 50vh;
+}
+
+.responsiveButton {
+  font-size: 0.7rem;
+  border-color: $gray-light;
+}
+.responsiveButton:hover {
+   border-color: $primary;
+}
+
+#leftMenu {
+    border-right-style: hidden;
+    border-color: $gray-light;
+}
+#leftMenu:hover {
+  border-right-style: solid;
+   border-color: $primary;
+  
+}
+#rightMenu {
+    border-left-style: hidden;
+    border-color: $gray-light;
+}
+#rightMenu:hover {
+  border-left-style: solid;
+   border-color: $primary;
+}
+
+.arrowDown {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  // border-color:  rgb(200, 205, 206);
+  border-top: 20px solid transparent;
+}
+
+.arrowDown {
+  // width: 0;
+  // height: 0;
+  // border-left: 20px solid transparent;
+  // border-right: 20px solid transparent;
+  // border-color:  rgb(200, 205, 206);
+  border-top: 20px solid rgb(200, 205, 206);
+}
+// .phonesImage {
+//     width: 80%;
+// }
+
+.responsiveText {
+  font-size: 0.7rem;
+  color: rgb(146, 155, 160);
+}

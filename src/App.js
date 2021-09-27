@@ -1,15 +1,20 @@
 
 import { NavBar } from "./components/00Navbar/NavBar";
 import './App.scss';
+
 import { Header } from "./components/01Header/Header";
 import { Services } from "./components/02Services/Services";
+import { Content } from "./components/02Services/Content";
+import { Portofolio } from "./components/03Portofolio/Portofolio";
 
 function App() {
   return (
-    <div className='cover'>
+    <div >
         <NavBar />
         <Header />
-        <Services />      
+        <Services />
+        <Content />
+        <Portofolio />      
     </div>
   );
 }
