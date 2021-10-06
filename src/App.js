@@ -6,6 +6,7 @@ import { Header } from "./components/01Header/Header";
 import { Services } from "./components/02Services/Services";
 import { Content } from "./components/02Services/Content";
 import { Portofolio } from "./components/03Portofolio/Portofolio";
+import { Statistics } from "./components/04Statistics/Statistics"
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Header />
         <Services />
         <Content />
-        <Portofolio />      
+        <Portofolio />  
+        <Statistics />    
     </div>
   );
 }

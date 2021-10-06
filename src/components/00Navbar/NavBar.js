@@ -16,7 +16,7 @@ export class NavBar extends React.Component {
           <div className="col-8 col-md-6 pt-3">
             <ul className="row d-flex justify-content-between align-items-center list-unstyled text-center navigationList ">
               <li className="col-2 " id="home">
-                HOME
+                 HOME
               </li>
               <li className="col-2 " id="services">
                 SERVICES

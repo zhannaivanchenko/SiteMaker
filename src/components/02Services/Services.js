@@ -51,9 +51,6 @@ export class Services extends React.Component {
   }
 
   handleClickGraph(e) {
-    console.log("e=%o", e);
-    console.log("e=%o", e.target.id);
-    // if(e.target.id === 'graphicDesignContainer'){ console.log('here I am')}
     switch (e.target.id) {
       case "graphicDesignContainer":
         return this.setState({
@@ -79,25 +76,27 @@ export class Services extends React.Component {
         return "";
     }
 
-    // this.setState({ serviceContent : serviceDescription.graphicDesignDescription });
+   
   }
   buttonLayout(services) {
     return services.map((service) => (
-      <div className="col-3 mx-auto d-flex justify-content-center align-items-center">
         <div
-          className="col-3  d-flex flex-column justify-content-center align-items-center"
-          onClick={this.handleClickGraph}
-          key={service.name}
+            className="col-3 mx-auto d-flex justify-content-center align-items-center"
+            key={service.name}
         >
-          <img
-            id={service.name}
-            src={service.image}
-            className="img-fluid"
-            alt={service.name}
-          />
-          <p className="serviceTitle text-nowrap ">{service.title}</p>
+            <div
+                className="col-3  d-flex flex-column justify-content-center align-items-center"
+                onClick={this.handleClickGraph}
+            >
+                <img
+                    id={service.name}
+                    src={service.image}
+                    className="img-fluid"
+                    alt={service.name}
+                />
+                <p className="serviceTitle text-nowrap ">{service.title}</p>
+            </div>
         </div>
-      </div>
     ));
   }
 
@@ -105,37 +104,39 @@ export class Services extends React.Component {
     let buttonDesign = this.buttonLayout(this.state.services);
 
     return (
-      <div className="container mt-5" id="services">
-        <div className="row justify-content-center align-items-center">
-          {buttonDesign}
-        </div>
+        <div className="container mt-5" id="services">
+            <div className="row justify-content-center align-items-center">
+                {buttonDesign}
+            </div>
 
-        <div className="row ">
-          <div className="col-1 "></div>
-          <div className="col-1 activeBox" id="webBox"></div>
-          <div className="col-2 border-bottom"></div>
-          <div
-            className="col-1 border-top border-bottom serviceBox defaultBox"
-            id="graphBox"
-          ></div>
-          <div className="col-2 border-bottom"></div>
-          <div
-            className="col-1 border-top border-bottom serviceBox defaultBox"
-            id="programBox"
-          ></div>
-          <div className="col-2 border-bottom"></div>
-          <div
-            className="col-1 border-top border-bottom serviceBox defaultBox"
-            id="photoBox"
-          ></div>
-        </div>
+            <div className="row ">
+                <div className="col-1 "></div>
+                <div
+                    className={`col-1 ${(this.state.activeService === 'webDesignContainer') ? "leftBox" : "defaultBox" }`}
+                    id="webBox"
+                ></div>
+                <div className="col-2 border-bottom"></div>
+                <div
+                    className={`col-1 ${(this.state.activeService === 'graphicDesignContainer') ? "activeBox" : "defaultBox" }`}
+                    id="graphBox"
+                ></div>
+                <div className="col-2 border-bottom"></div>
+                <div
+                    className={`col-1 ${this.state.activeService === 'programmingContainer' ? "activeBox" : "defaultBox" }`}
+                    id="programBox"
+                ></div>
+                <div className="col-2 border-bottom"></div>
+                <div
+                    className={`col-1 ${this.state.activeService === 'photographyContainer' ? "rightBox" : "defaultBox" }`}                    id="photoBox"
+                ></div>
+            </div>
 
-        <div className="row justify-content-left">
-          <p className="offset-2 col-9 text-right pt-4 pb-5 serviceDescriptionText">
-            {this.state.serviceContent}
-          </p>
+            <div className="row justify-content-left">
+                <p className="offset-2 col-9 text-right pt-4 pb-5 serviceDescriptionText">
+                    {this.state.serviceContent}
+                </p>
+            </div>
         </div>
-      </div>
     );
   }
 }
