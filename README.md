@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was written in React with SASS for the aim of practice in educational purposes.
 
 ## Available Scripts
 
